@@ -13,7 +13,7 @@ export default function MealDetailsPage({params}) {
   
     <header className={customClass.header}>
     <div className={customClass.image}>
-      <Image src={meal.image} alt={meal.title} fill />
+    <Image src={meal.image.startsWith('/') ? meal.image : `/${meal.image}`} alt={meal.title} fill />
     </div>
     <div className={customClass.headerText}>
       <h1>{meal.title}</h1>

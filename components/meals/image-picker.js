@@ -21,7 +21,7 @@ export default function ImagePicker({label,name}) {
     fileReader.readAsDataURL(file);
   }
   return <div className={customClasses.picker}>
-    <lable htmlFor={name} >{label}</lable>
+    <label htmlFor={name} >{label}</label>
     <div className={customClasses.controls}>
       <div className={customClasses.preview}>
         {!pickedImage && <p>No image picked yet.</p>}
